@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Task List</title>
+    
+    <link href="css\bootstrap.min.css" rel="stylesheet">  
+    <link href="css\tasks.css" rel="stylesheet">  
+    <link href="css\font-awesome.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <section class="panel tasks-widget">
+                    <header class="panel-heading">
+                        Todo list
+                    </header>
+                    <div class="panel-body">
+                        <form class="form-inline" role="form" id="task-form">
+                            <div class="form-group">
+                                <label class="sr-only" for="exampleInputEmail2">New Task</label>
+                                <input type="text" class="form-control" id="newtask" placeholder="Add new Task">
+                            </div> 
+                            <input type="submit" class="btn btn-success" value="Add Task">
+                        </form>
+                        <br><br>
+                        <div class="task-content ">
+                            <h5 id="task_title">Tasks</h5>
+                                <label class="sr-only" for="exampleInputEmail2">Filter</label>
+                                <input type="text" class="form-control" id="filter" id="filter" placeholder="Filter">
+                            <br><br>
+                            <ul class="task-list collection">
+                                <!-- <li class="collection-item"> 
+                                    <div class="task-title">
+                                        <span class="task-title-sp">Flatlab is Modern Dashboard</span> 
+                                        <div class="pull-right hidden-phone"> 
+                                            <a class="btn btn-danger btn-xs">
+                                                <i class="fa fa-trash-o "></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>   -->
+                                                               
+                            </ul>
+
+                        </div>
+
+                        <div class=" add-task-row">
+                            <a class="btn btn-default btn-sm pull-left clear-tasks" href="#">Clear Tasks</a> 
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>   
+
+    <!-- <script src="js\jquery.js"></script> -->
+    <!-- <script src="js\bootstrap.min.js"></script> -->
+    <script src="app.js"></script>
+
+</body>
+</html>
